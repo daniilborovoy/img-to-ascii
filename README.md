@@ -1,3 +1,0 @@
-# img-to-ascii
-
-Work in progress...
