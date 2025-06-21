@@ -1,0 +1,29 @@
+[project]
+name = "img-to-ascii"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Daniil Borovoy", email = "daniilborovoy42@gmail.com" }
+]
+dependencies = [
+    "opencv-python>=4.11.0.86",
+    "ipykernel>=6.29.5",
+    "numpy>=2.3.1",
+    "matplotlib>=3.10.3",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/img_to_ascii"]
